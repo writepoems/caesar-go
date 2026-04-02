@@ -23,6 +23,12 @@ func Encode(text string, shift int) string {
 	new_chars := make([]string, 0)
 
 	for index := range chars {
+		// handle whitespace and whatnot
+		if chars[index] == " " {
+			new_chars = append(new_chars, " ")
+			continue
+		}
+
 		curr_pos := 0
 
 		for position := range alphabet {
