@@ -38,7 +38,7 @@ func Encode(text string, shift int) string {
 			}
 		}
 
-		new_chars = append(new_chars, alphabet[curr_pos+shift])
+		new_chars = append(new_chars, alphabet[(curr_pos+shift)%26])
 	}
 
 	return strings.Join(new_chars, "")
