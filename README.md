@@ -10,7 +10,7 @@ package main
 import (
 	"fmt"
 
-	caesar "github.com/mohamedbtw/caesar-go"
+	caesar "github.com/writepoems/caesar-go"
 )
 
 func main() {
